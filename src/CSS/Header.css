@@ -1,0 +1,21 @@
+
+
+#header{
+    display: flex;
+    background-color: #ece5e5;
+    width: 100%;
+    height: auto;
+
+}
+
+#header div{
+    padding: 0;
+}
+
+.menu ul {
+  margin: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+}

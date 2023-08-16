@@ -1,0 +1,11 @@
+
+
+#cover{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    background-color: #011362;
+    color: white;
+}
+
+
