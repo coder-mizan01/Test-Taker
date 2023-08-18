@@ -2,20 +2,73 @@
 
 #header{
     display: flex;
-    background-color: #ece5e5;
+    background-color: #F3F7FF;
     width: 100%;
     height: auto;
-
+    padding: 20px 50px;
+    justify-content:space-between;
 }
 
 #header div{
-    padding: 0;
+    padding: 0px;
+}
+
+
+.logo-div a{
+ font-size: 1.5rem;
+ text-transform:uppercase;
+ text-decoration: none;
+ color: #121250;
+ font-family:'Times New Roman', Times, serif;
+ font-weight: 800;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
 }
 
 .menu ul {
   margin: 0;
+  padding: 0;   
 }
 
 .menu ul li{
     display: inline-block;
+    padding-left:40px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4c3c3c;
+    font-size: 1.09rem;
+    font-weight:700;
+}
+
+.menu ul li a:hover{
+    color: #121250;
+}
+.menu ul li:first-child{
+    padding-left:0px;
+}
+
+
+.responsive-side-menu{
+    display: none;
+}
+
+@media(max-width:990px){
+    .menu{
+        display: none;
+    }
+    .responsive-side-menu{
+        display: block;
+    }
+}
+
+@media(max-width:768px){
+   #header {
+        padding: 20px 40px;
+   }
 }
