@@ -25,7 +25,7 @@ const Header = () => {
               <li><Link>Attend Exam</Link></li>
               <li><Link>Contact</Link></li>
               <li><Link>About Us</Link></li>
-              <li><Link to='/auth/google'>Sign In</Link></li>
+              <li><Link to='/login'>login</Link></li>
            </ul>
         </div>
 

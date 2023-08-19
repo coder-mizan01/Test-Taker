@@ -1,6 +1,7 @@
 // Import the necessary modules
 import express from "express";
 import connectDB from "./Database/db.js";
+import cors from "cors"
 
 //imported files
 
@@ -15,6 +16,7 @@ connectDB();
 //middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors());
 app.use(authRoutes);
 
 // Define routes
