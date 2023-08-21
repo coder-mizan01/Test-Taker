@@ -86,10 +86,11 @@ const loginController = async (req,res) => {
          res.status(201).send({
           success : true,
           message : 'welcome',
-          User : {
+          user : {
             email : user.email,
-            token
-          }
+
+          },
+          token : token
          })
       }
       

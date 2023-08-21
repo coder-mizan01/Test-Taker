@@ -1,0 +1,79 @@
+
+
+#footer{
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1.2fr 1.2fr;
+    padding: 100px 50px 40px 50px;
+    background-color: #0D084D;
+    color: #FFFFFF;
+    grid-gap: 20px;
+
+}
+
+
+.footer-logo{
+    font-size: 1.5rem;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    opacity: 1;
+    color: #503AF2;
+}
+
+#footer a{  
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+#footer h2{
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 600;
+}
+
+
+.getin-touch-details .footer-input input{
+    padding: 10px 15px;
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+.getin-touch-details .footer-input button{
+    padding:1px 15px 8px 15px;
+    border: none;
+    background-color: #503AF2;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.getin-touch-details .social-media{
+    margin-top: 10px;
+}
+
+.getin-touch-details .social-media{
+    font-size: 2rem;
+}
+
+
+
+@media(max-width : 990px){
+    #footer{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+
+    }
+}
+
+@media(max-width : 768px){
+    #footer{
+        padding: 50px 10px 20px 10px;
+    }
+}
+

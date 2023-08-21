@@ -9,6 +9,7 @@ import Register from "../Pages/Register"
 
 //component
 import Header from "../Layout/Header";
+import Footer from "../Layout/Footer";
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

@@ -1,18 +1,30 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { setUserToken } from "../Redux/AuthRedux";
 import { Link } from "react-router-dom";
 
 const Login = () => {
 
   const [email , setEmail] = useState('');
   const [password,setPassword] = useState('');
-
+  const dispatch = useDispatch(); // Get dispatch function
   const handleSubmit =  async (e) =>{
+    
     e.preventDefault();
     try {
       const res = await axios.post('http://localhost:4000/login',{email,password})
       if(res.data.success){
-        alert(res.data.message)
+
+        dispatch(
+          setUserToken({
+            user: res.data.user.email,
+            token: res.data.token,
+          })
+        );
+        localStorage.setItem("authUser", JSON.stringify(res.data));
+        alert(res.data.message);
+        
       }else{
         console.log(res.data.message);
       }
