@@ -2,11 +2,16 @@ import React from "react";
 //import { useDispatch, useSelector } from "react-redux";
 //import { setUserToken } from "../Redux/AuthRedux";
 
+//css
+import "../CSS/Feauters.css"
+
 //icons
 import {BsFileEarmarkSpreadsheetFill} from 'react-icons/bs';
 import {GiTeacher} from "react-icons/gi";
 import {MdDashboard} from "react-icons/md";
-import {BiSolidTimeFive} from "react-icons/bi"
+import {BiSolidTimeFive} from "react-icons/bi";
+
+
 
 const Feauters = () => {
   /*const user = useSelector(state => state.auth.user);
@@ -18,7 +23,7 @@ const Feauters = () => {
       <section id="feauter">
 
         <div className="feauter-title">
-          <h2 className="">give and take exam over online</h2>
+          <h5 className="">give and take exam over online</h5>
         </div>
 
         <div className="feauter-flex">
@@ -62,6 +67,7 @@ const Feauters = () => {
           <div className="image-part">
             <img src="feauter-section-img.png" alt="" />
           </div>
+
         </div>
       </section>
     </>

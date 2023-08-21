@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+
+#feauter{
+    display: block;
+    margin-top: 120px;
+}
+
+.feauter-title{
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.feauter-title h5{
+    font-family: 'Roboto Serif', serif;
+
+    font-size: 3rem;
+}
+
+.feauter-flex{
+    display: flex;
+}
+
+.card-part{
+    flex: 50%;
+}
+
+.image-part{
+    background: #f3f7ff;
+    flex: 50%;
+}
+
+.image-part img{
+    width: 650px;
+    height: auto;
+}
