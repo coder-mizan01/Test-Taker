@@ -30,11 +30,9 @@ const registerController = async(req,res) => {
       }
 
     //making password hashed
-
     const hashedPassword = await hashPassword(password);
 
       //Register a user;
-
       const registerUser = await Users({email,password:hashedPassword})
 
         await registerUser.save();
@@ -57,7 +55,6 @@ const loginController = async (req,res) => {
       const {email,password} = req.body;
 
       //if does not find a user
-
       const user = await Users.findOne({email : email});
       if(!user){
         res.status(404).send({
@@ -88,9 +85,9 @@ const loginController = async (req,res) => {
           message : 'welcome',
           user : {
             email : user.email,
-
+            token : token
           },
-          token : token
+
          })
       }
       
@@ -102,11 +99,18 @@ const loginController = async (req,res) => {
     }
 }
 
-const userController = (req,res) => {
+const userController = async (req,res) => {
     try {
-      res.send('dasdasdads')
+      const users = await Users.find();
+      res.status(200).send({
+        message : 'all users',
+        users : users
+      })
     } catch (error) {
-      console.log(error);
+      res.status(500).send({
+        message : 'error',
+        error : error.message
+      })
     }
 }
 

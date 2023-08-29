@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setUserToken } from "../Redux/AuthRedux";
+import { setUser } from "../Redux/AuthRedux";
 import { Link } from "react-router-dom";
 
 const Login = () => {
 
   const [email , setEmail] = useState('');
   const [password,setPassword] = useState('');
-  const dispatch = useDispatch(); // Get dispatch function
+  const dispatch = useDispatch(); // Get dispatch   function
   const handleSubmit =  async (e) =>{
     
     e.preventDefault();
@@ -17,12 +17,13 @@ const Login = () => {
       if(res.data.success){
 
         dispatch(
-          setUserToken({
-            user: res.data.user.email,
-            token: res.data.token,
+          setUser({
+            email: res.data.user.email,
+            token: res.data.user.token,
           })
         );
-        localStorage.setItem("authUser", JSON.stringify(res.data));
+        localStorage.setItem("authEmail", JSON.stringify(res.data.user.email));
+        localStorage.setItem('authToken',JSON.stringify(res.data.user.token))
         alert(res.data.message);
         
       }else{

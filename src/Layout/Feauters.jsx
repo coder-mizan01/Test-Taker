@@ -1,6 +1,4 @@
 import React from "react";
-//import { useDispatch, useSelector } from "react-redux";
-//import { setUserToken } from "../Redux/AuthRedux";
 
 //css
 import "../CSS/Feauters.css"
@@ -14,11 +12,9 @@ import {BiSolidTimeFive} from "react-icons/bi";
 
 
 const Feauters = () => {
-  /*const user = useSelector(state => state.auth.user);
-  const token = useSelector(state => state.auth.token)*/
+
   return (
     <>
-      {/* <div>{JSON.stringify( user ,null,4)}{JSON.stringify( token ,null,4)}</div> */}
 
       <section id="feauter">
 
@@ -31,41 +27,41 @@ const Feauters = () => {
           <div className="card-part">
 
             <div className="give-exam">
-              <BsFileEarmarkSpreadsheetFill />
-                <div className="give-exam-details">
-               <p>Give Exam over online</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+              <BsFileEarmarkSpreadsheetFill className="feauter-icon" />
+                <div className="give-exam-details" style={{paddingLeft:'20px'}}>
+               <p className="top">Give Exam over online</p>
+               <p className="bottom">Lorem ipsum dolor sit amet consectetur  </p> 
                </div>
             </div>
 
             <div className="take-exam">
-              <GiTeacher />
-              <div className="take-exam-details">
-               <p>Take Exam over online</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+              <GiTeacher  className="feauter-icon" />
+              <div className="take-exam-details" style={{paddingLeft:'20px'}} >
+               <p className="top" >Take Exam over online</p>
+               <p  className="bottom">Lorem ipsum dolor sit amet consectetur  </p> 
                </div>
             </div>
 
             <div className="see-result">
-              <MdDashboard />
-              <div className="see-result-details">
-               <p>See the result on the Dashboard</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+              <MdDashboard  className="feauter-icon" />
+              <div className="see-result-details" style={{paddingLeft:'20px'}}>
+               <p className="top" >See the result on the Dashboard</p>
+               <p  className="bottom">Lorem ipsum dolor sit amet consectetur  </p> 
                </div>
             </div>
 
             <div className="others">
-             <BiSolidTimeFive />
-              <div className="others-details">
-               <p>Give Exam over online</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+             <BiSolidTimeFive className="feauter-icon" />
+              <div className="others-details" style={{paddingLeft:'20px'}}>
+               <p className="top">Give Exam over online</p>
+               <p  className="bottom">Lorem ipsum dolor sit amet consectetur  </p> 
                </div>
             </div>
 
           </div>
 
           <div className="image-part">
-            <img src="feauter-section-img.png" alt="" />
+            <img className="img-fluid" src="feauter-section-img.png" alt="" />
           </div>
 
         </div>

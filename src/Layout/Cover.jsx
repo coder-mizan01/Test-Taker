@@ -14,8 +14,8 @@ const Cover = () => {
           This Website is used to be give exam and take exam
         </h2>
         <div className="cover-buttons">
-          <Link to='/' className="take-exam">Take Exam</Link>
-          <Link to='/' className="give-exam">Give Exam</Link>
+          <Link to='/take-exam' className="take-exam">Take Exam</Link>
+          <Link to='/attend-exam' className="give-exam">Give Exam</Link>
         </div>
       </div>
 

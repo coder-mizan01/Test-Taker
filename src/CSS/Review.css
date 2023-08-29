@@ -1,0 +1,20 @@
+
+.center{
+    width: 90%;
+    margin: auto;
+}
+
+.center button{
+    background-color: rebeccapurple;
+}
+.center button:active{
+    background-color: rebeccapurple;
+}
+.center button:hover{
+    background-color: rebeccapurple;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}

@@ -1,0 +1,133 @@
+
+/*
+.admit-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+}
+
+.admit-section p{
+    margin: 0px 10px;
+}
+
+.admit-section input{
+    margin: 0px 10px;
+}
+
+.admit-section p{
+    font-size: 1.5rem;
+}
+
+.admit-section input{
+    padding: 8px 35px 8px 10px;
+    outline: none;
+    border: 2px solid;
+}
+
+.admit-section button{
+    background-color: darkblue;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px #DDD;
+}
+
+.admit-section button:active{
+    transform: scale(0.9);
+}
+
+
+@media(max-width:700px){
+    .admit-section{
+        display: block;
+        text-align: center;
+    }
+    .admit-section p,button{
+        margin: 10px 0px;
+    }
+
+    .admit-section input{
+        padding: 8px 15px;
+    }
+    .admit-section button{
+        padding: 8px 50px;
+    }
+}*/
+
+
+
+
+.questions{
+    display: flex;
+    justify-content: center;
+}
+
+.questions-form{
+    margin: 25px 0px;
+}
+
+.questions-form div label{
+    width: 90px;
+}
+
+.questions-form div input{
+    width: 500px;
+    border-radius: none;
+    text-indent: 5px;
+    padding: 8px 0px;
+}
+
+.questions-form div input:active{
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+.questions-form p {
+    font-size: 1rem;
+    text-align: end;
+}
+
+#checkbox-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+#checkbox-input{
+    width: 20px;
+}
+
+#checkbox-div input{
+    width: 50px;
+    
+}
+#checkbox-div p{
+    display: inline-block;
+    margin: 0;
+}
+.questions-form button{
+    display: block;
+    text-align: center;
+    background-color: darkblue;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin: 8px 0px 0px 100px;  
+}
+
+@media(max-width:545px){
+    .questions-form div input{
+        width: 300px;
+    }
+
+    #checkbox-div{
+        display: block;
+        text-align: start;
+    }
+}

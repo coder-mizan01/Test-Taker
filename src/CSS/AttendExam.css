@@ -1,0 +1,24 @@
+
+
+.attend-exam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+}
+.attend-exam p,input,button{
+    margin: 0px 10px;
+}
+.attend-exam p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.attend-exam button{
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: #FFFFFF;
+}

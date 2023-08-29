@@ -13,6 +13,6 @@ router.post('/register',registerController)
 
 router.post('/login',loginController);
 
-router.get('/userdashboard', requireSignin, userController);
+router.get('/userdashboard', userController);
 
 export default router;

@@ -4,7 +4,7 @@ import React from 'react';
 //dependencies
 import { Link } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
-import { clearUserToken } from '../Redux/AuthRedux';
+import { clearUser } from '../Redux/AuthRedux';
 
 //css
 import "../CSS/Header.css";
@@ -13,11 +13,12 @@ import Offcanvas from './Offcanvas';
 
 const Header = () => {
    const dispatch = useDispatch();
-   const user = useSelector(state => state.auth.user);
-   console.log(user);
+   const email = useSelector(state => state.auth.email);
+   const token = useSelector(state => state.auth.token );
+   console.log(email,token);
 
    const hadnleLogOut = () =>{
-      dispatch(clearUserToken());   
+      dispatch(clearUser());   
       localStorage.removeItem('auth')
    }
   return (
@@ -30,12 +31,12 @@ const Header = () => {
 
         <div className="menu">
            <ul className=''>
-              <li><Link>Home</Link></li>
-              <li><Link>Take Exam</Link></li>
-              <li><Link>Attend Exam</Link></li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/take-exam'>Take Exam</Link></li>
+              <li><Link to='/attend-exam' >Attend Exam</Link></li>
               <li><Link>Contact</Link></li>
               <li><Link>About Us</Link></li>
-              {!user ? <li><Link to='/login'>login</Link></li> :  <li><Link to='/login'>logut</Link></li> }
+              {email && token ? <li><Link onClick={hadnleLogOut} to='/login'>logout</Link></li> :  <li><Link to='/login'>login</Link></li> }
              
            </ul>
         </div>

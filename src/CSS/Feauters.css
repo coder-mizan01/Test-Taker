@@ -20,10 +20,56 @@
 
 .feauter-flex{
     display: flex;
+    flex-direction: row;
 }
+
 
 .card-part{
     flex: 50%;
+}
+
+.card-part p{
+    margin: 0;
+    padding: 0;
+
+}
+
+.top{
+    font-size: 2vw;
+}
+
+.bottom{
+    font-size: 1.5vw; 
+}
+
+
+.give-exam,.see-result{
+    display: flex;
+    align-items: center;
+    margin: 25px 10px; /* Adjust the values as needed */
+    padding: 15px 25px; /* Adjust the values as needed */
+    border-left: 8px solid darkblue;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 50px 15px rgba(70,81,128,.07);
+}
+.take-exam,.others{
+    display: flex;
+    align-items: center;
+    margin: 25px 10px; /* Adjust the values as needed */
+    padding: 15px 25px; /* Adjust the values as needed */
+    border-left: 8px solid #0D084D;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0 40px 50px 0 rgba(70,81,128,.07);
+
+}
+
+.feauter-icon{
+   font-size: 2.3rem;
+
+   color: #0D084D;
+   
 }
 
 .image-part{
@@ -32,6 +78,32 @@
 }
 
 .image-part img{
-    width: 650px;
-    height: auto;
+    width: 600px;
+    max-height: 600px;
+}
+
+@media(max-width:990px){
+    .feauter-flex{
+        flex-direction: column;
+    }
+    .top{
+        font-size: 2.5vw;
+    }
+    
+    .bottom{
+        font-size: 2vw; 
+    }
+}
+
+@media(max-width:690px){
+    .top{
+        font-size: 4vw;
+    }
+    
+    .bottom{
+        font-size: 3vw; 
+    }
+    .feauter-title h5{
+       font-size: 2rem;
+    }
 }
