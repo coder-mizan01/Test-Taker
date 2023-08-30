@@ -34,8 +34,7 @@ const Header = () => {
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/take-exam'>Take Exam</Link></li>
               <li><Link to='/attend-exam' >Attend Exam</Link></li>
-              <li><Link>Contact</Link></li>
-              <li><Link>About Us</Link></li>
+              <li><Link to='/contact'>Contact</Link></li>
               {email && token ? <li><Link onClick={hadnleLogOut} to='/login'>logout</Link></li> :  <li><Link to='/login'>login</Link></li> }
              
            </ul>
