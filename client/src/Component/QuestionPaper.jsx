@@ -61,11 +61,11 @@ const QuestionPaper = ({updateQuestion}) => {
         );
       }) : ''}
  
-  <button type='submit' onClick={handleSubmit} >
+  <button style={{marginLeft:'40px'}} type='submit' onClick={handleSubmit} >
         Submit Answers
       </button>
 
-      {submitted && <p>{score}</p>}
+      {submitted && <p style={{marginLeft:'40px'}} > your score is :  {score}</p>}
     </>
   )
 }

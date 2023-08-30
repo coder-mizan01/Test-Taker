@@ -107,7 +107,7 @@ const userController = async (req,res) => {
         users : users
       })
     } catch (error) {
-      res.status(500).send({
+    res.status(500).send({
         message : 'error',
         error : error.message
       })

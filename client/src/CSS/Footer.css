@@ -50,8 +50,9 @@
 .getin-touch-details .footer-input button{
     padding:1px 15px 8px 15px;
     border: none;
-    background-color: #503AF2;
-    color: white;
+    /*background-color: #503AF2;*/
+    background-color: #B1ABFF;
+    color: black;
     font-size: 1.5rem;
     margin: 0;
 }
