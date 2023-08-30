@@ -58,8 +58,11 @@
     }
 }*/
 
-
-
+ 
+.questions .create-question-title{
+    text-align: center;
+    margin-top: 20px;
+}
 
 .questions{
     display: flex;

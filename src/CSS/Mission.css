@@ -69,11 +69,36 @@
 @media(max-width:600px){
     .left h2{
         font-size: 2.5rem;
+        line-height: 4rem;
     }
     .left p{
         font-size: 1.1rem;
+        line-height: 2.5rem;
     }
 }
 
+@media(max-width:450px){
+    .left h2{
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+    .left p{
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+    }
+    .right{
+        margin-top: 25px;
+    }
+
+    .right div{
+        text-align: start;
+    }
+
+    .right div img{
+        width: 250px;
+        max-height: 250px;
+        text-align: center;
+    }
+}
 
 

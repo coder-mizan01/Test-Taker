@@ -2,6 +2,7 @@
     position: relative;
     margin-top: 30px;
 }
+
 .slider .slick-prev {
     background-color: black; 
     color: #333333; 
@@ -11,7 +12,6 @@
   }
 
   
-
   .slider .slick-prev:hover {
     background-color: #333333;
     color: #ffffff;
@@ -31,17 +31,16 @@
     color: #ffffff;
   }
 
-
-
 #review-slider{
     background-color: #dbe3f2;
     padding: 70px 0px;
     text-align: center;
+    height: auto;
 }
 
 #review-slider h2{
     margin: 0px 0px 50px 0px;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
 }
 
 .slider{
@@ -72,6 +71,7 @@
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
+    
 }
 
 .top .details p{
@@ -89,6 +89,21 @@
     width: 80px;
     height: 80px;
     border-radius: 100%;
+}
+
+@media(max-width:990px){
+    .slider{
+        width: 90%;
+        margin: auto;
+      }
+}
+
+
+@media(max-width:768px){
+    .slider{
+        width: 90%;
+        margin: auto;
+      }
 }
 
 

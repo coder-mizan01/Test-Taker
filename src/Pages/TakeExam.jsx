@@ -80,8 +80,9 @@ const handleInputChange = (e) => {
        
   </div>}*/}
 
-      <h2>Create Questions</h2>
+<h2 style={{textAlign:'center',marginTop:'30px'}}>Create Questions</h2>
       <div className="questions">
+
         <form onSubmit={handleSubmit} className="questions-form">
           <div className="question" style={{ padding: "10px" }}>
             <label htmlFor="question">Question:</label>
@@ -164,7 +165,7 @@ const handleInputChange = (e) => {
 
 
 
-          <button type="submit">Submit</button>
+          <button type="submit">submit</button>
         </form>
       </div>
     </>
