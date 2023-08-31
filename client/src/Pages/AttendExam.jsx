@@ -22,7 +22,7 @@ const AttendExam = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/all-question");
+      const response = await axios.get("https://lazy-jade-binturong-belt.cyclic.app/all-question");
 
       if (response.data.success) {
         dispatch(setAllQuestions(response.data.questions));

@@ -9,7 +9,7 @@ const Register = () => {
   const handleSubmit = async (e) =>{
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/register',{email,password})
+      const res = await axios.post('https://lazy-jade-binturong-belt.cyclic.app/register',{email,password})
       if(res.data.success){
         alert(res.data.message);
       }else{

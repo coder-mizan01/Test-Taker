@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:4000/create-question",
+      "https://lazy-jade-binturong-belt.cyclic.app/create-question",
       formData
     );
     console.log(response.data);

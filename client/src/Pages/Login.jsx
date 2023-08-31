@@ -13,7 +13,7 @@ const Login = () => {
     
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/login',{email,password})
+      const res = await axios.post('https://lazy-jade-binturong-belt.cyclic.app/login',{email,password})
       if(res.data.success){
 
         dispatch(

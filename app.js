@@ -2,6 +2,7 @@
 import express from "express";
 import connectDB from "./Database/db.js";
 import cors from "cors"
+import path from "path"
 
 //imported files
 
@@ -21,9 +22,13 @@ app.use(cors());
 app.use(authRoutes);
 app.use(question);
 
-// Define routes
-app.get('/', (req, res) => {
-    res.send('hello')
+//static file
+
+app.use(express.static(path.join(__dirname,'./client/build')))
+
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname,'./client/build/index.html'))
 });
 
 
