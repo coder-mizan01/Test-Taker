@@ -18,6 +18,15 @@ const [formData, setFormData] = useState({
 });
 console.log(formData);
 
+const [isChecked,setisChecked] = useState(true);
+
+const handleCheckbox = () =>{
+   setisChecked(!isChecked)
+   if(!isChecked){
+    alert('you have to select this')
+   }
+}
+
 const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -156,7 +165,7 @@ const handleInputChange = (e) => {
           </div>
 
           <div id="checkbox-div">
-            <input type="checkbox" id="checkbox-input" />
+            <input type="checkbox" checked={!isChecked} id="checkbox-input"  onClick={handleCheckbox}/>
             <p>
               *please be sure you have to put the same Admit number for all 
               question
@@ -165,7 +174,7 @@ const handleInputChange = (e) => {
 
 
 
-          <button type="submit">submit</button>
+          <button type="submit" disabled={isChecked} >submit</button>
         </form>
       </div>
     </>

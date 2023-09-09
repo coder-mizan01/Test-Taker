@@ -2,6 +2,10 @@ import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+
+//css
+import "../CSS/Register.css"
+
 const Register = () => {
   const [email , setEmail] = useState('');
   const [password,setPassword] = useState('');
@@ -21,8 +25,8 @@ const Register = () => {
   }
   return (
     <>
-        <h2>This is register page</h2>
-      <form onSubmit={handleSubmit}>
+<h2 style={{textAlign:'center',marginTop:'20px'}}>This is Register page</h2>
+      <form onSubmit={handleSubmit} className='register-form'>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
@@ -57,8 +61,8 @@ const Register = () => {
           Submit
         </button>
         <div>
-          Dont have an account
-          <Link to="/register">Register please</Link>
+          Already have an account &nbsp;
+          <Link to="/login">login please</Link>
         </div>
       </form>
       </>

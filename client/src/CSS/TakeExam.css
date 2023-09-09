@@ -113,6 +113,7 @@
     display: inline-block;
     margin: 0;
 }
+
 .questions-form button{
     display: block;
     text-align: center;
@@ -122,6 +123,10 @@
     border-radius: 5px;
     padding: 8px 25px;
     margin: 8px 0px 0px 100px;  
+}
+
+.questions-form button:disabled{
+    opacity: 0.4;
 }
 
 @media(max-width:545px){

@@ -9,11 +9,11 @@ const QuestionPaper = ({updateQuestion}) => {
   const [score, setScore] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   
-
+console.log(selectedOptions);
   const handleSubmit = () => {
       let newScore = 0;
       updateQuestion.forEach((q)=>{
-        if (selectedOptions[q._id] && selectedOptions[q._id] === q.answer) {
+        if (selectedOptions[q._id]=== q.answer) {
           newScore += 1;
         }
       })
@@ -32,7 +32,7 @@ const QuestionPaper = ({updateQuestion}) => {
 
   return (
     <>
-    
+    <section id='question-paper'>
       { updateQuestion?.length > 0 ? updateQuestion.map((q,index) => {
          const selectedAnswer = selectedOptions[q._id];
         return (
@@ -66,6 +66,8 @@ const QuestionPaper = ({updateQuestion}) => {
       </button>
 
       {submitted && <p style={{marginLeft:'40px'}} > your score is :  {score}</p>}
+
+      </section>
     </>
   )
 }

@@ -4,11 +4,14 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../Redux/AuthRedux";
 import { Link } from "react-router-dom";
 
+//css
+import "../CSS/Login.css"
+
 const Login = () => {
 
   const [email , setEmail] = useState('');
   const [password,setPassword] = useState('');
-  const dispatch = useDispatch(); // Get dispatch   function
+  const dispatch = useDispatch(); // Get dispatch function
   const handleSubmit =  async (e) =>{
     
     e.preventDefault();
@@ -35,8 +38,8 @@ const Login = () => {
   }
   return (
     <>
-    <h2>This is Login page</h2>
-      <form onSubmit={handleSubmit}>
+    <h2 style={{textAlign:'center',marginTop:'20px'}}>This is Login page</h2>
+      <form onSubmit={handleSubmit} className="login-form">
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
@@ -71,7 +74,7 @@ const Login = () => {
           Submit
         </button>
         <div>
-          Dont have an account
+          Dont have an account&nbsp;
           <Link to="/register">Register please</Link>
         </div>
       </form>
